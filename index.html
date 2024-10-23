@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Number Submission</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Change Number Submission</h1>
+        <form id="changeForm">
+            <div class="form-group">
+                <label for="changeNumbers">Enter Change Numbers (comma-separated):</label>
+                <textarea id="changeNumbers" rows=9" placeholder="e.g., CHG1234567, CR7654321"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="results"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</body>
+</html>
